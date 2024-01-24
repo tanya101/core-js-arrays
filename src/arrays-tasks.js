@@ -71,9 +71,7 @@ const findElement = (arr, value) => arr.indexOf(value);
  *    findAllOccurrences([ null, undefined, null ], null) => 2
  *    findAllOccurrences([ true, 0, 1, 'true' ], true) => 1
  */
-function findAllOccurrences(/* arr, item */) {
-  throw new Error('Not implemented');
-}
+const findAllOccurrences = (arr, item) => arr.filter((i) => i === item).length;
 
 /**
  * Removes falsy values from the specified array.
