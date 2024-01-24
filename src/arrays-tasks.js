@@ -97,9 +97,7 @@ const removeFalsyValues = (arr) => arr.filter((item) => !!item);
  *    getStringsLength([ '', 'a', 'bc', 'def', 'ghij' ]) => [ 0, 1, 2, 3, 4 ]
  *    getStringsLength([ 'angular', 'react', 'ember' ]) => [ 7, 5, 5 ]
  */
-function getStringsLength(/* arr */) {
-  throw new Error('Not implemented');
-}
+const getStringsLength = (arr) => arr.map((value) => value.length);
 
 /**
  * Returns the average of all items in the specified array of numbers.
