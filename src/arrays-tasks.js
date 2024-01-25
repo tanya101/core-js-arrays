@@ -154,9 +154,7 @@ const isValueEqualsIndex = (arr) =>
  *    insertItem([ 1, 3, 4, 5 ], 2, 1)  => [ 1, 2, 3, 4, 5 ]
  *    insertItem([ 1, 'b', 'c'], 'x', 0) => [ 'x', 1, 'b', 'c' ]
  */
-function insertItem(/* arr, item, index */) {
-  throw new Error('Not implemented');
-}
+const insertItem = (arr, item, index) => arr.splice(index, 0, item);
 
 /**
  * Returns the n first items of the specified array.
