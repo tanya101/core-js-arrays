@@ -126,9 +126,8 @@ const getAverage = (arr) =>
  *    isSameLength(['orange', 'banana', 'cherry']) => true
  *    isSameLength(['cat', 'dog', 'elephant']) => false
  */
-function isSameLength(/* arr */) {
-  throw new Error('Not implemented');
-}
+const isSameLength = (arr) =>
+  arr.every((item) => item.length === arr[0].length);
 
 /**
  * Checks if there are elements in the array where the value is equal to its index.
