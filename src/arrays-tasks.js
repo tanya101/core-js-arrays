@@ -140,9 +140,8 @@ const isSameLength = (arr) =>
  *    isValueEqualsIndex([2, 1, 0, 4, 5]) => true
  *    isValueEqualsIndex([10, 20, 30, 40, 50]) => false
  */
-function isValueEqualsIndex(/* arr */) {
-  throw new Error('Not implemented');
-}
+const isValueEqualsIndex = (arr) =>
+  arr.some((item) => item === arr.indexOf(item));
 
 /**
  * Inserts the item into specified array at specified index.
