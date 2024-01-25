@@ -167,9 +167,7 @@ const insertItem = (arr, item, index) => arr.splice(index, 0, item);
  *    getHead([ 'a', 'b', 'c', 'd'], 3) => [ 'a', 'b', 'c' ]
  *    getHead([ 'a', 'b', 'c', 'd'], 0) => []
  */
-function getHead(/* arr, n */) {
-  throw new Error('Not implemented');
-}
+const getHead = (arr, n) => arr.slice(0, n);
 
 /**
  * Returns the n last items of the specified array.
