@@ -180,9 +180,7 @@ const getHead = (arr, n) => arr.slice(0, n);
  *    getTail([ 'a', 'b', 'c', 'd'], 3) => [ 'b', 'c', 'd' ]
  *    getTail([ 'a', 'b', 'c', 'd'], 0) => []
  */
-function getTail(/* arr, n */) {
-  throw new Error('Not implemented');
-}
+const getTail = (arr, n) => arr.slice(arr.length - n);
 
 /**
  * Returns the doubled array - elements of the specified array
