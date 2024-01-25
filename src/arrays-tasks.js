@@ -221,9 +221,7 @@ const toStringList = (arr) => arr.toString();
  *   distinct([ 1, 1, 2, 2, 3, 3, 4, 4]) => [ 1, 2, 3, 4]
  *   distinct([]) => []
  */
-function distinct(/* arr */) {
-  throw new Error('Not implemented');
-}
+const distinct = (arr) => Array.from(new Set(arr));
 
 /**
  * Creates an n-dimensional array and fills it with zeros.
