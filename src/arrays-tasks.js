@@ -326,9 +326,8 @@ const generateOdds = (len) => Array.from({ length: len }, (_, i) => 1 + i * 2);
  *   getElementByIndices(['one','two','three'], [2]) => 'three'  (arr[2])
  *   getElementByIndices([[[ 1, 2, 3]]], [ 0, 0, 1 ]) => 2        (arr[0][0][1])
  */
-function getElementByIndices(/* arr, indices */) {
-  throw new Error('Not implemented');
-}
+const getElementByIndices = (arr, indices) =>
+  indices.reduce((acc, index) => acc[index], arr);
 
 /**
  * Returns the number of all falsy values in the specified array.
