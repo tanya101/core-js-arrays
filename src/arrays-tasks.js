@@ -365,9 +365,13 @@ const getFalsyValuesCount = (arr) => arr.filter((value) => !value).length;
  *                              [0,0,0,1,0],
  *                              [0,0,0,0,1]]
  */
-function getIdentityMatrix(/* n */) {
-  throw new Error('Not implemented');
-}
+const getIdentityMatrix = (n) =>
+  new Array(n).fill().map((_, index) => {
+    const array = new Array(n).fill(0);
+    array[index] = 1;
+
+    return array;
+  });
 
 /**
  * Returns an array containing indices of odd elements in the input array.
