@@ -236,9 +236,12 @@ const distinct = (arr) => Array.from(new Set(arr));
  *    createNDimensionalArray(4, 2) => [[[[0, 0], [0, 0]], [[0, 0], [0, 0]]], [[[0, 0], [0, 0]], [[0, 0], [0, 0]]]]
  *    createNDimensionalArray(1, 1) => [0]
  */
-function createNDimensionalArray(/* n, size */) {
-  throw new Error('Not implemented');
-}
+const createNDimensionalArray = (n, size) =>
+  n === 1
+    ? new Array(size).fill(0)
+    : Array.from({ length: size }).map(() =>
+        createNDimensionalArray(n - 1, size)
+      );
 
 /**
  * Flattens a nested array into a single-level array.
